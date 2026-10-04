@@ -190,7 +190,7 @@ window.location.href = `/deca/${numeroDocumento}`;
                       e.target.value
                     )
                   }
-                  className="w-full rounded-xl border border-gray-300 p-3 text-base"
+                  className="w-full rounded-xl border border-gray-300 p-3 text-base text-gray-900"
                   placeholder="Nombre o razón social"
                   required
                 />
@@ -211,11 +211,11 @@ window.location.href = `/deca/${numeroDocumento}`;
                       e.target.value.toUpperCase()
                     )
                   }
-                  className="w-full rounded-xl border border-gray-300 p-3 text-base uppercase"
+                  className="w-full rounded-xl border border-gray-300 p-3 text-base text-gray-900"
                   placeholder="Ej. B12345678"
                   required
                 />
-              </div>
+              </div>uppercase"
 
 
               <div>
@@ -232,7 +232,7 @@ window.location.href = `/deca/${numeroDocumento}`;
                       e.target.value
                     )
                   }
-                  className="w-full rounded-xl border border-gray-300 p-3 text-base"
+                  className="w-full rounded-xl border border-gray-300 p-3 text-base text-gray-900"
                   placeholder="Dirección completa"
                   required
                 />
@@ -265,7 +265,7 @@ window.location.href = `/deca/${numeroDocumento}`;
                       e.target.value
                     )
                   }
-                  className="w-full rounded-xl border border-gray-300 p-3 text-base"
+                 className="w-full rounded-xl border border-gray-300 p-3 text-base text-gray-900"
                   placeholder="Nombre o razón social"
                   required
                 />
@@ -286,7 +286,7 @@ window.location.href = `/deca/${numeroDocumento}`;
                       e.target.value.toUpperCase()
                     )
                   }
-                  className="w-full rounded-xl border border-gray-300 p-3 text-base uppercase"
+                 className="w-full rounded-xl border border-gray-300 p-3 text-base text-gray-900"
                   placeholder="Ej. B12345678"
                   required
                 />
@@ -319,7 +319,7 @@ window.location.href = `/deca/${numeroDocumento}`;
                       e.target.value
                     )
                   }
-                  className="w-full rounded-xl border border-gray-300 p-3 text-base"
+                  className="w-full rounded-xl border border-gray-300 p-3 text-base text-gray-900"
                   required
                 />
               </div>
@@ -339,7 +339,7 @@ window.location.href = `/deca/${numeroDocumento}`;
                       e.target.value
                     )
                   }
-                  className="w-full rounded-xl border border-gray-300 p-3 text-base"
+                 className="w-full rounded-xl border border-gray-300 p-3 text-base text-gray-900"
                   placeholder="Lugar de origen"
                   required
                 />
@@ -360,7 +360,7 @@ window.location.href = `/deca/${numeroDocumento}`;
                       e.target.value
                     )
                   }
-                  className="w-full rounded-xl border border-gray-300 p-3 text-base"
+                  className="w-full rounded-xl border border-gray-300 p-3 text-base text-gray-900"
                   placeholder="Lugar de destino"
                   required
                 />
@@ -414,7 +414,7 @@ window.location.href = `/deca/${numeroDocumento}`;
                       e.target.value
                     )
                   }
-                  className="w-full rounded-xl border border-gray-300 p-3 text-base"
+                 className="w-full rounded-xl border border-gray-300 p-3 text-base text-gray-900"
                   placeholder="Ej. 18.500 kg"
                   required
                 />
@@ -447,7 +447,7 @@ window.location.href = `/deca/${numeroDocumento}`;
                       e.target.value.toUpperCase()
                     )
                   }
-                  className="w-full rounded-xl border border-gray-300 p-3 text-base uppercase"
+                 className="w-full rounded-xl border border-gray-300 p-3 text-base text-gray-900"
                   placeholder="Ej. 1234 ABC"
                   required
                 />
@@ -468,7 +468,7 @@ window.location.href = `/deca/${numeroDocumento}`;
                       e.target.value.toUpperCase()
                     )
                   }
-                  className="w-full rounded-xl border border-gray-300 p-3 text-base uppercase"
+                  className="w-full rounded-xl border border-gray-300 p-3 text-base text-gray-900"
                   placeholder="Si corresponde"
                 />
               </div>
@@ -520,7 +520,7 @@ window.location.href = `/deca/${numeroDocumento}`;
                       e.target.value
                     )
                   }
-                  className="w-full rounded-xl border border-gray-300 p-3 text-base"
+                 className="w-full rounded-xl border border-gray-300 p-3 text-base text-gray-900"
                   placeholder="Número o referencia"
                 />
 
