@@ -124,6 +124,15 @@ export default function Home() {
         >
           Ver DECA
         </button>
+        <button
+  type="button"
+  onClick={() => {
+    window.location.href = `/editar/${deca.numero_documento}`;
+  }}
+  className="mt-2 w-full rounded-xl bg-gray-800 p-3 font-semibold text-white"
+>
+  ✏️ Editar DECA
+</button>
       </div>
     ))
   )}
