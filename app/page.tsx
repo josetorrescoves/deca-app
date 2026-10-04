@@ -15,14 +15,24 @@ export default function Home() {
 
         <div className="space-y-4">
           
-          <button className="w-full rounded-2xl bg-blue-600 p-6 text-xl font-semibold text-white shadow-lg">
+          <button
+  onClick={() => {
+    window.location.href = "/leer-albaran";
+  }}
+  className="w-full rounded-2xl bg-blue-600 p-6 text-xl font-semibold text-white shadow-lg"
+>
             📷
             <span className="ml-3">
               Escanear albarán
             </span>
           </button>
 
-          <button className="w-full rounded-2xl bg-white p-6 text-xl font-semibold text-gray-900 shadow-lg">
+          <button
+  onClick={() => {
+    window.location.href = "/crear";
+  }}
+  className="w-full rounded-2xl bg-white p-6 text-xl font-semibold text-gray-900 shadow-lg"
+>
             ✏️
             <span className="ml-3">
               Introducir datos manualmente
@@ -51,3 +61,4 @@ export default function Home() {
     </main>
   );
 }
+
