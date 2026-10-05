@@ -29,7 +29,7 @@ export default function Login() {
       return;
     }
 
-    window.location.href = "/crear";
+    window.location.href = "/";
   };
 
   const recuperarContrasena = async () => {
