@@ -36,6 +36,18 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gray-100 px-4 py-8">
       <div className="mx-auto max-w-md">
+        <div className="mb-4 flex justify-end">
+  <button
+    type="button"
+    onClick={async () => {
+      await supabase.auth.signOut();
+      window.location.href = "/login";
+    }}
+    className="rounded-lg bg-gray-800 px-4 py-2 text-sm font-semibold text-white"
+  >
+    Cerrar sesión
+  </button>
+</div>
         
         <header className="mb-8 text-center">
           <h1 className="text-3xl font-bold text-gray-900">
@@ -132,6 +144,34 @@ export default function Home() {
   className="mt-2 w-full rounded-xl bg-gray-800 p-3 font-semibold text-white"
 >
   ✏️ Editar DECA
+</button>
+<button
+  type="button"
+  onClick={async () => {
+    const confirmar = window.confirm(
+      "¿Seguro que quieres eliminar este DECA?"
+    );
+
+    if (!confirmar) return;
+
+    const { error } = await supabase
+      .from("decas")
+      .delete()
+      .eq("id", deca.id);
+
+    if (error) {
+      console.error("Error al eliminar el DECA:", error);
+      alert("No se ha podido eliminar el DECA.");
+      return;
+    }
+
+    setDecas((anteriores) =>
+      anteriores.filter((item) => item.id !== deca.id)
+    );
+  }}
+  className="mt-2 w-full rounded-xl bg-red-600 p-3 font-semibold text-white"
+>
+  🗑️ Eliminar DECA
 </button>
       </div>
     ))
