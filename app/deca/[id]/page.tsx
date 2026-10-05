@@ -144,23 +144,32 @@ export default function VerDeca({
           {deca.observaciones || "Sin observaciones"}
         </p>
 
-        <div className="mt-8 print:hidden">
-          <button
-            onClick={() => {
-              window.location.href = `/editar/${deca.numero_documento}`;
-            }}
-            className="rounded-lg bg-black px-5 py-3 font-medium text-white"
-          >
-            ✏️ Editar DECA
-          </button>
+        <div className="mt-8 flex flex-col gap-3 print:hidden sm:flex-row">
+  <button
+    onClick={() => {
+      window.location.href = `/editar/${deca.numero_documento}`;
+    }}
+    className="rounded-lg bg-black px-5 py-3 font-medium text-white"
+  >
+    ✏️ Editar DECA
+  </button>
 
-          <button
-            onClick={() => window.print()}
-            className="ml-3 rounded-lg bg-black px-5 py-3 font-medium text-white"
-          >
-            🖨️ Imprimir / Guardar PDF
-          </button>
-        </div>
+  <button
+    onClick={() => window.print()}
+    className="rounded-lg bg-black px-5 py-3 font-medium text-white"
+  >
+    🖨️ Imprimir / Guardar PDF
+  </button>
+
+  <button
+    onClick={() => {
+      window.location.href = "/";
+    }}
+    className="rounded-lg bg-blue-600 px-5 py-3 font-medium text-white"
+  >
+    🏠 Volver al inicio
+  </button>
+</div>
       </div>
     </main>
   );
