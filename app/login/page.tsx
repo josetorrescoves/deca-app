@@ -24,7 +24,7 @@ export default function Login() {
 
     if (error) {
       console.error("Error al iniciar sesión:", error);
-      setError(error.message);
+      setError("Correo o contraseña incorrectos.");
       setCargando(false);
       return;
     }
