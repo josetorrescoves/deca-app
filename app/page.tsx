@@ -177,6 +177,17 @@ export default function Home() {
     ))
   )}
 </div>
+<div className="mt-5">
+  <button
+    type="button"
+    onClick={() => {
+      window.location.href = "/mis-decas";
+    }}
+    className="w-full rounded-xl bg-gray-900 p-4 text-lg font-semibold text-white shadow"
+  >
+    📚 Ver todos mis DeCA
+  </button>
+</div>
         </section>
 
       </div>
