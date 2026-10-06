@@ -156,16 +156,16 @@ window.location.href = `/deca/${numeroDocumento}`;
             Nuevo DeCA
           </h1>
 
-          <p className="mt-2 text-gray-600">
+          <p className="mt-2 text-black">
             Documento de Control Administrativo
           </p>
         </header>
 
 
         <form
-          onSubmit={generarDeca}
-          className="space-y-6"
-        >
+  onSubmit={generarDeca}
+  className="space-y-6 text-black [&_input]:text-black [&_textarea]:text-black [&_input::placeholder]:text-black [&_textarea::placeholder]:text-black"
+>
 
           {/* CARGADOR CONTRACTUAL */}
 

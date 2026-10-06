@@ -22,6 +22,7 @@ export default function LeerAlbaran() {
     console.log("IMAGEN CONVERTIDA:", imagenBase64.substring(0, 50));
 
     setResultado("Leyendo albarán...");
+    console.log("LA IA ESTÁ LEYENDO EL ALBARÁN...");
     console.log("SE HA EJECUTADO seleccionarImagen");
 
     const respuesta = await fetch("/api/leer-albaran", {
@@ -87,6 +88,11 @@ export default function LeerAlbaran() {
             </div>
             
           )}
+          {resultado === "Leyendo albarán..." && (
+  <div className="mt-6 rounded-xl bg-blue-50 p-4 text-center text-blue-800">
+    🤖 Leyendo albarán... Un momento, por favor.
+  </div>
+)}
                 {resultado && (
   <div className="mt-6 rounded-xl bg-white p-4 text-black shadow border border-gray-300">
     <h2 className="mb-3 text-lg font-bold">

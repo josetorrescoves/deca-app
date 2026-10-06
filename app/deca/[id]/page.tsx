@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { supabase } from "../../../lib/supabase";
+import { QRCodeSVG } from "qrcode.react";
 
 export default function VerDeca({
   params,
@@ -56,10 +57,21 @@ export default function VerDeca({
           Documento de Control Administrativo
         </h1>
 
-        <p className="mb-6 text-sm text-gray-600 sm:mb-8 sm:text-base">
+        <div className="mb-6 flex flex-col items-center gap-4 sm:flex-row sm:items-center sm:justify-between">
+  <p className="text-sm text-black sm:text-base">
+    Nº de documento: {deca.numero_documento}
+  </p>
 
-          Nº de documento: {deca.numero_documento}
-        </p>
+  <div className="flex flex-col items-center">
+    <QRCodeSVG
+  value={`${window.location.origin}/deca/${deca.numero_documento}`}
+  size={120}
+/>
+    <p className="mt-2 text-xs text-black">
+      Código identificativo
+    </p>
+  </div>
+</div>
 
         <hr className="mb-5 sm:mb-6" />
 
